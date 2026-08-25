@@ -28,6 +28,12 @@ These files document the Create a DOB tutorial from environment setup through lo
 
 The integrity manifest is [`tutorial-run/SHA256SUMS.txt`](tutorial-run/SHA256SUMS.txt). All 12 entries were verified against the copied files during repository preparation.
 
+## Transaction proof
+
+The local tutorial returned transaction hash `0x7678ce441d722bcd13d0f0622d7542b521c9a29647a72afec5fc97919ba468a6`. [Open the screenshot that shows the hash](https://github.com/zuhdev/dob-tutorial/blob/main/evidence/tutorial-run/Screenshot%202026-08-24%20133311.png). It was created on the OffCKB devnet and cannot be opened in the public Pudge testnet explorer.
+
+The testnet transaction link is intentionally still pending. Add the direct Pudge transaction URL only after minting with your own disposable testnet account.
+
 ## What this evidence proves
 
 - OffCKB installation and a running local devnet.

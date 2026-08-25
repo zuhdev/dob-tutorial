@@ -33,6 +33,11 @@ Open these links directly on GitHub:
 
 The testnet mint and public deployment links will be added here after that run is completed with my own disposable testnet account.
 
+## Transaction links
+
+- **Local OffCKB transaction:** `0x7678ce441d722bcd13d0f0622d7542b521c9a29647a72afec5fc97919ba468a6` — [open the transaction-hash proof](https://github.com/zuhdev/dob-tutorial/blob/main/evidence/tutorial-run/Screenshot%202026-08-24%20133311.png). This hash belongs to the local devnet at `127.0.0.1:28114`, so it is not queryable in a public testnet explorer.
+- **Testnet transaction:** pending. After the testnet run, add the direct [Pudge Explorer](https://pudge.explorer.nervos.org/) transaction URL here.
+
 ## What the app proves
 
 The image shown at the end is not a local file preview. After minting, the app uses the transaction hash and output index to query the live CKB cell, decodes the Spore data, converts the returned bytes into a browser `Blob`, and renders that result.
