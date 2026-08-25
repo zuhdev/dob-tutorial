@@ -37,10 +37,10 @@ Open these links directly on GitHub:
 ## Transaction links
 
 - **Local OffCKB transaction:** `0x7678ce441d722bcd13d0f0622d7542b521c9a29647a72afec5fc97919ba468a6` — [open the transaction-hash proof](https://github.com/zuhdev/dob-tutorial/blob/main/evidence/tutorial-run/Screenshot%202026-08-24%20133311.png). This hash belongs to the local devnet at `127.0.0.1:28114`, so it is not queryable in a public testnet explorer.
-- **Fresh testnet DOB transaction:** `0x7c6928426eb6d5573c3654897994de8e12225fcb94fe8235e7f98e7c91253c97`, output index `0` — [open it in Pudge Explorer](https://pudge.explorer.nervos.org/transaction/0x7c6928426eb6d5573c3654897994de8e12225fcb94fe8235e7f98e7c91253c97).
+- **testnet DOB transaction:** `0x7c6928426eb6d5573c3654897994de8e12225fcb94fe8235e7f98e7c91253c97`, output index `0` — [open it in Pudge Explorer](https://pudge.explorer.nervos.org/transaction/0x7c6928426eb6d5573c3654897994de8e12225fcb94fe8235e7f98e7c91253c97).
 - **Testnet faucet transaction:** `0x62d84aca644d25af3b6780d7fa86cc3a5b6ddb6adb2649f2babeb3a37a546459` — [open the funding transaction in Pudge Explorer](https://pudge.explorer.nervos.org/transaction/0x62d84aca644d25af3b6780d7fa86cc3a5b6ddb6adb2649f2babeb3a37a546459).
 
-The fresh DOB output is a live Spore cell with `image/png` content and 42,531 payload bytes. The on-chain payload SHA-256, `b6d61a0a7ae18ce202c37ab7f8d0b113471b38a8e8c3b839767aebd1715b02bb`, matches the uploaded source file exactly.
+The DOB output is a live Spore cell with `image/png` content and 42,531 payload bytes. The on-chain payload SHA-256, `b6d61a0a7ae18ce202c37ab7f8d0b113471b38a8e8c3b839767aebd1715b02bb`, matches the uploaded source file.
 
 ## What the app proves
 
