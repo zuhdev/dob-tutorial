@@ -99,9 +99,7 @@ npm start
 
 Use only the disposable local account printed by `offckb accounts`. Select an image, click **Create DOB**, wait for the transaction hash, and then click **Check Spore Content** to render the bytes retrieved from the cell.
 
-## Fresh testnet result
-
-The testnet flow was repeated on August 25, 2026 with a fresh disposable signer:
+## testnet result
 
 - App network: CKB testnet via `NETWORK=testnet`.
 - DOB transaction: [`0x7c692842...253c97`](https://pudge.explorer.nervos.org/transaction/0x7c6928426eb6d5573c3654897994de8e12225fcb94fe8235e7f98e7c91253c97).
@@ -111,7 +109,6 @@ The testnet flow was repeated on August 25, 2026 with a fresh disposable signer:
 - Returned content: `image/png`, 42,531 bytes.
 - Verification: the app queried the live cell, unpacked the Spore bytes, and rendered the image in the browser.
 
-The disposable private key is masked in the capture and is not stored in this repository.
 
 ## Validate
 
