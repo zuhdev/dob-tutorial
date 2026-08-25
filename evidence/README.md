@@ -7,7 +7,9 @@ These files document the Create a DOB tutorial from environment setup through lo
 1. See the [DOB transaction hash returned by the app](tutorial-run/Screenshot%202026-08-24%20133311.png).
 2. See the [`image/jpeg` Spore content read back](tutorial-run/Screenshot%202026-08-24%20133348.png).
 3. See the [picture rendered in the browser](tutorial-run/Screenshot%202026-08-24%20133448.png).
-4. Read [`REFLECTION.md`](../REFLECTION.md) for the debugging story and DOB/NFT comparison.
+4. See the [fresh testnet transaction in Pudge](https://pudge.explorer.nervos.org/transaction/0x7c6928426eb6d5573c3654897994de8e12225fcb94fe8235e7f98e7c91253c97).
+5. See the [fresh testnet live-cell render](testnet-dob-render.png) and [explorer capture](testnet-transaction-explorer.png).
+6. Read [`REFLECTION.md`](../REFLECTION.md) for the debugging story and DOB/NFT comparison.
 
 ## Original tutorial run
 
@@ -28,11 +30,15 @@ These files document the Create a DOB tutorial from environment setup through lo
 
 The integrity manifest is [`tutorial-run/SHA256SUMS.txt`](tutorial-run/SHA256SUMS.txt). All 12 entries were verified against the copied files during repository preparation.
 
+The fresh captures are verified by [`testnet-SHA256SUMS.txt`](testnet-SHA256SUMS.txt).
+
 ## Transaction proof
 
 The local tutorial returned transaction hash `0x7678ce441d722bcd13d0f0622d7542b521c9a29647a72afec5fc97919ba468a6`. [Open the screenshot that shows the hash](https://github.com/zuhdev/dob-tutorial/blob/main/evidence/tutorial-run/Screenshot%202026-08-24%20133311.png). It was created on the OffCKB devnet and cannot be opened in the public Pudge testnet explorer.
 
-The testnet transaction link is intentionally still pending. Add the direct Pudge transaction URL only after minting with your own disposable testnet account.
+The fresh testnet run used a disposable signer and returned transaction `0x7c6928426eb6d5573c3654897994de8e12225fcb94fe8235e7f98e7c91253c97` at output index `0`. It is [committed in Pudge Explorer](https://pudge.explorer.nervos.org/transaction/0x7c6928426eb6d5573c3654897994de8e12225fcb94fe8235e7f98e7c91253c97), and the app [read the live cell and rendered its `image/png` bytes](testnet-dob-render.png). The explorer proof is also preserved as [a screenshot](testnet-transaction-explorer.png).
+
+The testnet payload is 42,531 bytes. Its SHA-256 is `b6d61a0a7ae18ce202c37ab7f8d0b113471b38a8e8c3b839767aebd1715b02bb`, matching the uploaded source file exactly.
 
 ## What this evidence proves
 
@@ -43,19 +49,12 @@ The testnet transaction link is intentionally still pending. Add the direct Pudg
 - Image selection and local Spore creation.
 - Transaction hash returned after creation.
 - `image/jpeg` data read back and rendered in the browser.
+- Fresh CKB testnet transaction with a public explorer link.
+- `image/png` data read back from the committed testnet cell and rendered in the browser.
 
-## Remaining campaign evidence
+## Submission status
 
-The current screenshots are a local/devnet proof set. They do **not** prove a CKB testnet mint or a public deployment. Before final campaign submission, add a separate `testnet/` directory containing:
-
-1. the funded disposable testnet address, with no private key visible;
-2. the app running with `NETWORK=testnet`;
-3. the resulting transaction hash and output index;
-4. the committed transaction in Pudge Explorer;
-5. the content rendered back from that testnet cell;
-6. the public deployed app URL visible in the browser.
-
-Then replace the pending testnet row in the root README with the actual explorer and deployment links.
+The evidence set now includes the original local tutorial, the fresh CKB testnet mint, the committed public explorer record, and the image rendered from the live testnet cell. No private key is visible in the fresh testnet captures.
 
 ## Sensitive evidence warning
 
