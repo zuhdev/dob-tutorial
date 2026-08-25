@@ -1,8 +1,8 @@
 # Reflection: building my first CKB DOB
 
-This was my first practical experience with CKB and Spore-based digital objects. I began by installing OffCKB, starting a local devnet, checking the provided account, and running the official Create a DOB example. The final flow was simple to describe—upload an image, create a Spore cell, read the cell back, and render its bytes—but getting there exposed several useful layers of the stack.
+This was my first practical experience with CKB and Spore-based digital objects. I began by installing OffCKB, starting a local devnet, checking the provided account, and running the official Create a DOB example. The final flow was simple to describe, upload an image, create a Spore cell, read the cell back, and render its bytes but getting there exposed several useful layers of the stack.
 
-## The debugging was part of the lesson
+## The debugging 
 
 The setup did not behave like a perfectly clean tutorial recording. npm completed with deprecation and audit warnings. Parcel found its default port occupied and moved the app to port `58845`. I also encountered a CCC dependency/API mismatch and a browser RPC problem caused by `fetch` losing the invocation context expected by the client. Aligning the dependency, binding the browser fetch call safely, and clearing stale build state allowed the app to reach the actual transaction flow.
 
