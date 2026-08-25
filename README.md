@@ -16,6 +16,23 @@ This repository documents my completion of the Nervos **Create a DOB** tutorial 
 
 The first three technical stages are proven by the original chronological screenshots. I have deliberately left the testnet item marked pending until this repository has a real public URL and a transaction created from my own testnet account.
 
+## Quick review links
+
+Open these links directly on GitHub:
+
+- [Evidence index](https://github.com/zuhdev/dob-tutorial/blob/main/evidence/README.md)
+- [Step 3 — OffCKB running](https://github.com/zuhdev/dob-tutorial/blob/main/evidence/tutorial-run/Screenshot%202026-08-24%20121235.png)
+- [Step 7 — Parcel port recovery](https://github.com/zuhdev/dob-tutorial/blob/main/evidence/tutorial-run/Screenshot%202026-08-24%20122911.png)
+- [Step 10 — DOB transaction hash](https://github.com/zuhdev/dob-tutorial/blob/main/evidence/tutorial-run/Screenshot%202026-08-24%20133311.png)
+- [Step 11 — Spore content retrieved](https://github.com/zuhdev/dob-tutorial/blob/main/evidence/tutorial-run/Screenshot%202026-08-24%20133348.png)
+- [Step 12 — Picture rendered from DOB](https://github.com/zuhdev/dob-tutorial/blob/main/evidence/tutorial-run/Screenshot%202026-08-24%20133448.png)
+- [Full screenshot folder](https://github.com/zuhdev/dob-tutorial/tree/main/evidence/tutorial-run)
+- [Reflection](https://github.com/zuhdev/dob-tutorial/blob/main/REFLECTION.md)
+- [App source](https://github.com/zuhdev/dob-tutorial/blob/main/index.tsx)
+- [Validation workflow](https://github.com/zuhdev/dob-tutorial/blob/main/.github/workflows/validate.yml)
+
+The testnet mint and public deployment links will be added here after that run is completed with my own disposable testnet account.
+
 ## What the app proves
 
 The image shown at the end is not a local file preview. After minting, the app uses the transaction hash and output index to query the live CKB cell, decodes the Spore data, converts the returned bytes into a browser `Blob`, and renders that result.
